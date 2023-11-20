@@ -1,0 +1,9 @@
+namePrefix: dev-
+namespace: dev
+bases:
+  - ../../base
+imageTags:
+  - name: mhussain78/tekton-greeting-service
+    newTag: v1.0.0
+patchesStrategicMerge:
+  - deployment-patch.yaml

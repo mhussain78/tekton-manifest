@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tekton-greeting-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tekton-greeting-service
+  template:
+    metadata:
+      labels:
+        app: tekton-greeting-service
+    spec:
+      containers:
+        - name: app
+          image: mhussain78/tekton-greeting-service:latest
+          ports:
+            - containerPort: 8088
+          imagePullPolicy: Always
