@@ -4,6 +4,6 @@ bases:
   - ../../base
 imageTags:
   - name: mhussain78/tekton-greeting-service
-    newTag: f447dba4dabd08f81b2c3f7e0d3606f6a0d665e7
+    newTag: ce5e136b3dc739b67a79daea71c1a108fb2d1b13
 patchesStrategicMerge:
   - deployment-patch.yaml
